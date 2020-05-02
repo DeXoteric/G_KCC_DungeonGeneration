@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Main.gd" type="Script" id=1]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+tile_size = 32
+num_rooms = 50
+min_size = 4
+max_size = 10
+horizontal_spread = 300
+
+[node name="Rooms" type="Node" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 10, 10 )
